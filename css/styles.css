@@ -16,6 +16,12 @@
   grid-column:1/2;
   grid-row:2;
   padding:1em;
+  margin:1em;
+  width:50%;
+  border-style:solid;
+  border-width:1px;
+  border-radius:15px;
+
 }
 
 .deposits_withdrawls {
@@ -24,6 +30,8 @@
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-gap:1em;
+  padding:1em;
+  margin:1em;
 }
 
 .deposits_withdrawls > div {
@@ -36,5 +44,14 @@
   grid-column: 1/2;
   grid-row:4;
   text-align:center;
-  width:50%
+  border-width:5px;
+  border-radius:35%;
+  border-style:solid;
+  border-color:#000;
+  padding:.5em;
+  margin:2em;
+}
+
+h4 {
+  text-align:center;
 }
