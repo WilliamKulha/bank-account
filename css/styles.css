@@ -37,7 +37,7 @@
 .deposits_withdrawls > div {
   padding: 1em;
   margin:1em;
-  height: minmax(7em, auto);
+  height: minmax(100px, auto);
 }
 
 .account_balance_display {
