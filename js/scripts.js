@@ -26,7 +26,24 @@ $(function(){
     let initialDeposit = parseInt($('#initial_deposit').val());
     let newBalance = initialDeposit;
     const userAccount = new BankAccount(name, initialDeposit, newBalance);
-    userAccount.makeWithdrawl(5);
     console.log(userAccount);
+    $('.new_account').remove();
+    $('.balance_here').text(`$${userAccount.balance}`);
+
+      $('#make_deposit').submit(function(event) {
+        event.preventDefault();
+        let deposit = parseInt($('#current_deposit').val());
+        userAccount.makeDeposit(deposit);
+        $('.balance_here').text(`$${userAccount.balance}`);
+        $('#make_deposit').trigger('reset');
+      });
+
+      $('#make_withdrawl').submit(function(event) {
+        event.preventDefault();
+        let withdrawl = parseInt($('#current_withdrawl').val());
+        userAccount.makeWithdrawl(withdrawl);
+        $('.balance_here').text(`$${userAccount.balance}`);
+        $('#make_withdrawl').trigger('reset');
+      })
   })
 })
