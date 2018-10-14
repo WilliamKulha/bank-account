@@ -1,0 +1,40 @@
+.wrapper {
+  display:grid;
+  grid-template-columns: 2, 1fr;
+  grid-gap:1em;
+  grid-auto-rows: minmax(10em, auto);
+}
+
+.banner {
+  grid-column:1/2;
+  grid-row:1;
+  text-align:center;
+  padding:1em;
+}
+
+.new_account {
+  grid-column:1/2;
+  grid-row:2;
+  padding:1em;
+}
+
+.deposits_withdrawls {
+  grid-column:1/2;
+  grid-row:3;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-gap:1em;
+}
+
+.deposits_withdrawls > div {
+  padding: 1em;
+  margin:1em;
+  height: minmax(7em, auto);
+}
+
+.account_balance_display {
+  grid-column: 1/2;
+  grid-row:4;
+  text-align:center;
+  width:50%
+}
